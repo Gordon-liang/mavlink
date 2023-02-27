@@ -7635,5 +7635,15 @@
       <field type="float[3]" name="d_term" invalid="[NaN]">Rate Controller D-term</field>
       <field type="float[3]" name="ff_term" invalid="[NaN]">Rate Controller FF-term</field>
     </message>
+    <message id="802" name="CHIRP_SWEEP">
+      <description>
+        Get current chirp sweep msgs
+      </description>
+      <field type="float" name="chirp" invalid="[NaN]">chirp signal for sweep identification</field>
+      <field type="float" name="r" invalid="[NaN]">reference</field>
+      <field type="float" name="u" invalid="[NaN]">ctrl output + chirp</field>
+      <field type="float" name="y_raw" invalid="[NaN]">plant output raw</field>
+      <field type="float" name="y_f" invalid="[NaN]">plant output after diff filters: rpm filter, dnf, nf, lpf</field>
+    </message>
   </messages>
 </mavlink>
