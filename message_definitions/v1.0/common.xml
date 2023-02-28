@@ -7639,6 +7639,7 @@
       <description>
         Get current chirp sweep msgs
       </description>
+      <field type="uint64_t" name="timestamp" units="ms">Timestamp (time since system boot).</field>
       <field type="float" name="chirp" invalid="[NaN]">chirp signal for sweep identification</field>
       <field type="float" name="r" invalid="[NaN]">reference</field>
       <field type="float" name="u" invalid="[NaN]">ctrl output + chirp</field>
